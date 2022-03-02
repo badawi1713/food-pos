@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --color-background-dark-primary: #252836;
+  --color-white: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+    /* 100/16 (default font-size) = 6.25 or 62.5% */
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Barlow", "Arial", sans-serif;
+    background-color: var(--color-background-dark-primary);
+    color: var(--color-white);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  outline: none;
 }
